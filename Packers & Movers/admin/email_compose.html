@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from html.phoenixcoded.net/dasho/bootstrap/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Feb 2021 12:51:29 GMT -->
+
+<head>
+	<title>Movers Admin</title>
+	<!-- HTML5 Shim and Respond.js IE11 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 11]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<!-- Meta -->
+
+	<!-- Favicon icon -->
+	<link rel="icon" href="assets/images/favicon.svg" type="image/x-icon" />
+	<!-- fontawesome icon -->
+	<link rel="stylesheet" href="assets/fonts/fontawesome/css/fontawesome-all.min.css" />
+	<!-- animation css -->
+	<link rel="stylesheet" href="assets/plugins/animation/css/animate.min.css" />
+	<!-- Material Design css -->
+	<link rel="stylesheet" href="assets/fonts/material/css/materialdesignicons.min.css" />
+
+	<!-- notification css -->
+	<link rel="stylesheet" href="assets/plugins/notification/css/notification.min.css" />
+
+	<!-- vendor css -->
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<!-- page css -->
+	<link rel="stylesheet" href="assets/css/pages/pages.css">
+</head>
+
+<body class="">
+	<!-- [ Pre-loader ] start -->
+	<div class="loader-bg">
+		<div class="loader-track">
+			<div class="loader-fill"></div>
+		</div>
+	</div>
+
+	<!-- [ Pre-loader ] End -->
+	<!-- [ navigation menu ] start -->
+	<nav class="pcoded-navbar menupos-fixed menu-dark menu-item-icon-style6">
+		<div class="navbar-wrapper">
+			<div class="navbar-brand header-logo">
+				<a href="index.html" class="b-brand">
+					<div class="b-bg">
+						<i class="fas fa-bolt"></i>
+					</div>
+					<span class="b-title">Movers Admin</span>
+				</a>
+			</div>
+			<div class="navbar-content scroll-div">
+				<ul class="nav pcoded-inner-navbar">
+					<li class="nav-item pcoded-menu-caption">
+						<label>Navigation</label>
+					</li>
+
+					<li data-username="animations active" class="nav-item">
+						<a href="index.html" class="nav-link">
+							<span class="pcoded-micon"><i class="feather icon-home"></i></span>
+							<span class="pcoded-mtext">Dashboard</span>
+						</a>
+					</li>
+
+					<li data-username="animations" class="nav-item">
+						<a href="users.html" class="nav-link">
+							<span class="pcoded-micon"><i class="feather icon-user"></i></span>
+							<span class="pcoded-mtext">Users</span>
+						</a>
+					</li>
+
+					<li data-username="animations" class="nav-item">
+						<a href="transporter.html" class="nav-link">
+							<span class="pcoded-micon"><i class="fas fa-truck-moving"></i></span>
+							<span class="pcoded-mtext">Tranporters</span>
+						</a>
+					</li>
+
+					<li data-username="animations" class="nav-item">
+						<a href="mail.html" class="nav-link">
+							<span class="pcoded-micon"><i class="feather icon-mail"></i></span>
+							<span class="pcoded-mtext">Mail</span>
+						</a>
+					</li>
+
+					<!-- -------------------------- -->
+
+					<!-- <li class="nav-item pcoded-menu-caption">
+						<label>Forms</label>
+					</li> -->
+					<!-- <li data-username="form elements advance component validation masking wizard picker select"
+						class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link"><span class="pcoded-micon"><i
+									class="feather icon-file-text"></i></span><span
+								class="pcoded-mtext">Forms</span></a>
+						<ul class="pcoded-submenu">
+							<li class=""><a href="form_elements.html" class="">Form Basic</a></li>
+							<li class=""><a href="form2_basic.html" class="">Form elements</a></li>
+							<li class=""><a href="form2_input_group.html" class="">Input group</a></li>
+							<li class=""><a href="form2_checkbox.html" class="">Checkbox</a></li>
+							<li class=""><a href="form2_radio.html" class="">radio</a></li>
+							<li class=""><a href="form2_switch.html" class="">Switch</a></li>
+							<li class=""><a href="form2_megaoption.html" class="">Mega option</a></li>
+						</ul>
+					</li> -->
+				</ul>
+
+				<!-- <div class="card text-center">
+					<div class="card-block">
+						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+						<i class="fas fa-cloud-upload-alt f-40"></i>
+						<h6 class="mt-3">New Content coming soon ... </h6>
+						<p>New Features to be made available in short term</p>
+						<a href="#!" target="_blank" class="btn btn-gradient-primary btn-sm text-white m-0">
+							Coming Soon ...
+						</a>
+					</div>
+				</div> -->
+			</div>
+		</div>
+	</nav>
+	<!-- [ navigation menu ] end -->
+
+	<!-- [ Header ] start -->
+	<header class="navbar pcoded-header navbar-expand-lg navbar-light headerpos-fixed">
+		<div class="m-header">
+			<a class="mobile-menu" id="mobile-collapse1" href="#!"><span></span></a>
+			<a href="index.html" class="b-brand">
+				<div class="b-bg">
+					<i class="fas fa-bolt"></i>
+				</div>
+				<span class="b-title">Movers Admin</span>
+				<img src="assets/images/logo-icon.svg" alt="" class="logo-thumb images" />
+			</a>
+		</div>
+		<a class="mobile-menu" id="mobile-header" href="#!">
+			<i class="feather icon-more-horizontal"></i>
+		</a>
+		<div class="collapse navbar-collapse">
+			<a href="#!" class="mob-toggler"></a>
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<div class="main-search open">
+						<div class="input-group">
+							<input type="text" id="m-search" class="form-control" placeholder="Search . . ." />
+							<a href="#!" class="input-group-append search-close">
+								<i class="feather icon-x input-group-text"></i>
+							</a>
+							<span class="input-group-append search-btn btn btn-primary">
+								<i class="feather icon-search input-group-text"></i>
+							</span>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<ul class="navbar-nav ml-auto">
+				<li>
+					<div class="dropdown drp-user">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="icon feather icon-settings"></i>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right profile-notification">
+							<div class="pro-head">
+								<img src="assets/images/user/avatar-1.jpg" class="img-radius"
+									alt="User-Profile-Image" />
+								<span>
+									<span class="text-muted">Admin</span>
+									<span class="h6">doe@company.com</span>
+								</span>
+							</div>
+							<ul class="pro-body">
+								<li>
+									<a href="#!" class="dropdown-item"><i class="feather icon-settings"></i>
+										Settings</a>
+								</li>
+								<li>
+									<a href="#!" class="dropdown-item"><i class="feather icon-user"></i> Profile</a>
+								</li>
+								<li>
+									<a href="message.html" class="dropdown-item"><i class="feather icon-mail"></i> My
+										Messages</a>
+								</li>
+								<li>
+									<a href="auth-signin.html" class="dropdown-item"><i class="feather icon-lock"></i>
+										Lock Screen</a>
+								</li>
+								<li>
+									<a href="./logout.php" class="dropdown-item"><i
+											class="feather icon-power text-danger"></i>
+										Logout</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<!-- [ Header ] end -->
+
+	<!-- [ Main Content ] start -->
+	<div class="pcoded-main-container">
+		<div class="pcoded-wrapper">
+			<div class="pcoded-content">
+				<div class="pcoded-inner-content">
+					<div class="main-body">
+						<div class="page-wrapper">
+							<!-- [ breadcrumb ] start -->
+							<div class="page-header">
+								<div class="page-block">
+									<div class="row align-items-center">
+										<div class="col-md-12">
+											<div class="page-header-title">
+												<h5>Home</h5>
+											</div>
+											<ul class="breadcrumb">
+												<li class="breadcrumb-item">
+													<a href="index.html"><i class="feather icon-home"></i></a>
+												</li>
+												<li class="breadcrumb-item">
+													<a href="#!"> Mail</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- [ breadcrumb ] end -->
+							<!-- [ Main Content ] start -->
+
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="card email-card">
+										<div class="card-header">
+											<div class="mail-header">
+												<div class="row align-items-center">
+													<!-- [ email-left section ] start -->
+													<div class="col-xl-2 col-md-3">
+														<a href="mail.html" class="b-brand">
+															<div class="">
+																<a href="mail.html"
+																	class="btn btn-rounded btn-outline-info">
+																	<i class="feather icon-chevron-left"></i> Back</a>
+															</div>
+														</a>
+													</div>
+													<!-- [ email-left section ] end -->
+													<!-- [ email-right section ] start -->
+													<div class="col-xl-10 col-md-9">
+														<div class="input-group mb-0">
+															<div class="input-group-prepend">
+																<label class="input-group-text"
+																	for="inputGroupSelect01"><i
+																		class="feather icon-search"></i></label>
+															</div>
+															<select class="custom-select" id="inputGroupSelect01">
+																<option selected>Search ...</option>
+																<option value="1">One</option>
+																<option value="2">Two</option>
+																<option value="3">Three</option>
+															</select>
+														</div>
+													</div>
+													<!-- [ email-right section ] end -->
+												</div>
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="mail-body">
+												<div class="row">
+													<!-- [ email-left section ] start -->
+													<div class="col-xl-2 col-md-3">
+														<ul class="mb-2 nav nav-tab flex-column nav-pills">
+															<li class="nav-item mail-section">
+																<a class="nav-link text-left active" href="mail.html">
+																	<span><i class="feather icon-inbox"></i>
+																		Inbox</span>
+																	<span class="float-right">6</span>
+																</a>
+															</li>
+															<li class="nav-item mail-section">
+																<a class="nav-link text-left" href="email_inbox.html">
+																	<span><i class="feather icon-star-on"></i>
+																		Starred</span>
+																</a>
+															</li>
+															<li class="nav-item mail-section">
+																<a class="nav-link text-left" href="email_inbox.html">
+																	<span><i class="feather icon-file-text"></i>
+																		Drafts</span>
+																</a>
+															</li>
+															<li class="nav-item mail-section">
+																<a class="nav-link text-left" href="email_inbox.html">
+																	<span><i class="feather icon-navigation"></i> Sent
+																		Mail</span>
+																</a>
+															</li>
+															<li class="nav-item mail-section">
+																<a class="nav-link text-left" href="email_inbox.html">
+																	<span><i class="feather icon-trash-2"></i>
+																		Trash</span>
+																</a>
+															</li>
+														</ul>
+														<a class="email-more-link" data-toggle="collapse"
+															href="#email-more-cont" role="button" aria-expanded="false"
+															aria-controls="email-more-cont"><span><i
+																	class="feather icon-chevron-down mr-2"></i>More</span><span
+																style="display: none;"><i
+																	class="feather icon-chevron-up mr-2"></i>Less</span></a>
+														<div class="collapse" id="email-more-cont">
+															<ul class="nav nav-tab flex-column nav-pills">
+																<li class="nav-item mail-section">
+																	<a class="nav-link text-left">
+																		<span><i class="feather icon-zap"></i>
+																			Important</span>
+																		<span class="float-right">6</span>
+																	</a>
+																</li>
+																<li class="nav-item mail-section">
+																	<a class="nav-link text-left">
+																		<span><i
+																				class="feather icon-message-circle"></i>
+																			Chats</span>
+																	</a>
+																</li>
+																<li class="nav-item mail-section">
+																	<a class="nav-link text-left">
+																		<span><i
+																				class="feather icon-alert-triangle"></i>
+																			Spam</span>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<!-- [ email-left section ] end -->
+													<!-- [ email-right section ] start -->
+													<div class="col-xl-10 col-md-9">
+														<div class="tab-content" id="v-pills-tabContent">
+															<div class="mail-body-content">
+																<form class="form-material">
+																	<div class="form-group">
+																		<label for="exampleInputEmail1">To</label>
+																		<input type="email" class="form-control"
+																			id="exampleInputEmail1"
+																			placeholder="Enter email">
+																	</div>
+																	<div class="form-group">
+																		<div class="row">
+																			<div class="col-md-6">
+																				<div class="form-group">
+																					<label
+																						for="exampleInputEmail2">Cc</label>
+																					<input type="email"
+																						class="form-control"
+																						id="exampleInputEmail2"
+																						placeholder="Enter email">
+																				</div>
+																			</div>
+																			<div class="col-md-6">
+																				<div class="form-group">
+																					<label
+																						for="exampleInputEmail3">Bcc</label>
+																					<input type="email"
+																						class="form-control"
+																						id="exampleInputEmail3"
+																						placeholder="Enter email">
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label for="exampleInputEmail4">Subject</label>
+																		<input type="email" class="form-control"
+																			id="exampleInputEmail4"
+																			placeholder="Subject">
+																	</div>
+																	<textarea id="tinymce-editor"
+																		name="name">Put your things hear...</textarea>
+																	<div class="float-right mt-3">
+																		<button type="button"
+																			class="btn btn-secondary">Save as
+																			draft</button>
+																		<button type="button"
+																			class="btn btn-primary">Send</button>
+																	</div>
+																</form>
+															</div>
+														</div>
+													</div>
+													<!-- [ email-right section ] end -->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- [ Main Content ] end -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- [ Main Content ] end -->
+
+	<!-- Warning Section start -->
+
+	<!-- Warning Section Ends -->
+
+	<!-- Required Js -->
+	<script src="assets/js/vendor-all.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/pcoded.min.js"></script>
+	<script src="assets/js/menu-setting.min.js"></script>
+
+	<!-- am chart js -->
+	<script src="assets/plugins/chart-am4/js/core.js"></script>
+	<script src="assets/plugins/chart-am4/js/charts.js"></script>
+	<script src="assets/plugins/chart-am4/js/animated.js"></script>
+	<script src="assets/plugins/chart-am4/js/maps.js"></script>
+	<script src="assets/plugins/chart-am4/js/worldLow.js"></script>
+	<script src="assets/plugins/chart-am4/js/continentsLow.js"></script>
+
+	<!-- dashboard-custom js -->
+	<script src="assets/js/pages/dashboard-analytics.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+
+    <script src="./asset/jquery-3.5.1.js"></script>
+    <script src="./asset/jquery.min.js"></script>
+
+
+    <link rel='stylesheet' id='wp-pagenavi-css' href='wp-content/plugins/wp-pagenavi/pagenavi-css44fd.css?ver=2.70'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='rubikfont-css'
+        href='https://fonts.googleapis.com/css?family=Rubik%3A400%2C500&amp;display=swap&amp;ver=5.6' type='text/css'
+        media='all' />
+    <link rel='stylesheet' id='latofont-css'
+        href='https://fonts.googleapis.com/css?family=Lato%3A400%2C700&amp;display=swap&amp;ver=5.6' type='text/css'
+        media='all' />
+    <link rel='stylesheet' id='ion-css' href='code.ionicframework.com/ionicons/2.0.1/css/ionicons.min40df.css?ver=5.6'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='bootstrap-css'
+        href='stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min40df.css?ver=5.6' type='text/css'
+        media='all' />
+    <!-- <link rel='stylesheet' id='jqsteps-css' href='wp-content/themes/shipme/css/jquery.steps40df.css?ver=5.6'
+        type='text/css' media='all' /> -->
+    <link rel='stylesheet' id='core-css' href='wp-content/themes/shipme/css/main40df.css?ver=5.6' type='text/css'
+        media='all' />
+    <link rel='stylesheet' id='core2-css' href='wp-content/themes/shipme/style40df.css?ver=5.6' type='text/css'
+        media='all' />
+    <link rel='stylesheet' id='mobile-menu-css' href='wp-content/themes/shipme/css/mobile-menu40df.css?ver=5.6'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='jquery-ui-css'
+        href='code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui40df.css?ver=5.6' type='text/css' media='all' />
+
+</head>
+
+<body
+    class="page-template page-template-shipme-special-page-template page-template-shipme-special-page-template-php page page-id-6 elementor-default elementor-kit-122 elementor-page elementor-page-6">
+
+    <div class="ship-header">
+        <div class="container">
+            <div class="ship-header-left">
+
+                <!-- this is for the mobile menu -->
+                <div class="shp-toggle-sidebar shp-material-button">
+                    <i class="material-icons shp-open-icon">&#xE5D2;</i>
+                    <i class="material-icons shp-close-icon"></i>
+                </div>
+
+                <!-- this is for the mobile menu -->
+
+                <!--  <h1>slim.</h1> -->
+                <div id="logo">
+                    <a href="index.html"><img src="wp-content/themes/shipme/images/logo_black.png" height="35" /></a>
+                </div>
+            </div>
+            <!-- ship-header-left -->
+            <div class="ship-header-right">
+                <div class="dropdown dropdown-c">
+                    <a href="login.html" class="logged-user"> <span>Login</span> </a>
+                </div>
+
+                <div class="dropdown dropdown-c">
+                    <a href="register.html" class="logged-user"> <span>Register</span> </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- container -->
+    </div>
+
+    <div class="ship-navbar">
+        <div class="container">
+            <div id="bs-example-navbar-collapse-1" class="navbar-shipme-main">
+                <ul id="menu-main-header-menu" class="nav shp-theme-main-navi">
+                    <li itemscope="itemscope" itemtype="" id="menu-item-28"
+                        class="home menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-28 nav-item">
+                        <a title="Home" href="user_login.html" class="nav-link">User</a>
+                    </li>
+                    <li itemscope="itemscope" id="menu-item-29"
+                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29 nav-item active"><a
+                            title="All Jobs" href="./transporter_login.html" class="nav-link">Transporter</a></li>
+                    <li itemscope="itemscope" itemtype="" id="menu-item-30"
+                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30 nav-item"><a
+                            title="Transporters" href="admin_login.html" class="nav-link">Admin</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="ship-mainpanel">
+        <div class="container">
+
+            <div class="signin-wrapper">
+
+                <div class="signin-box">
+                    <h2 class="signin-title-primary">Log in to Transporter Account</h2>
+
+                    <form name="loginform" id="loginform" method="" action="">
+                        <!-- <input type="hidden" value="1" name="shipme_login" />
+                        <input type="hidden" value="login" name="action" /> -->
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="t_uname"
+                                placeholder="Enter your email address">
+                        </div>
+                        <!-- form-group -->
+                        <div class="form-group mg-b-50">
+                            <input type="password" class="form-control" name="t_pwd"
+                                placeholder="Enter your password...">
+                        </div>
+                        <!-- form-group -->
+
+                        <!-- <div class="form-group mg-b-50"><input class="do_input" name="rememberme" type="checkbox" id="rememberme" value="true" tabindex="3" /> Keep me logged in</div> -->
+
+                        <input type="submit" name="" value="Sign In" class="btn btn-primary btn-block btn-signin">
+
+                        <span id="alerts"></span>
+
+                    </form>
+
+
+                    <p class="mg-b-0 bord-top-shp text-bottom-login"><a href="./transporter_register.html"> Register</a>
+                        Today to
+                        get Shipments.</p>
+
+                </div>
+                <!-- signin-box -->
+
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // sign in script
+        $(document).ready(function () {
+
+            $("#loginform").submit(function (e) {
+                e.preventDefault()
+                var form = $(this)
+                let data = form.serialize();
+                // alert(data)
+
+                $.ajax({
+                    type: "POST",
+                    data: data,
+                    url: "./sql/login.php",
+                    success: function (response) {
+                        if (response == "success") {
+                            window.location.href = './transporter/index.html';
+                        }
+                        else {
+                            $('#alerts').html(response)
+                        }
+                    },
+                    error: function () {
+                        alert("Error Occured")
+                    }
+
+                })
+
+
+            })
+
+        })
+    </script>
+
+</body>
+
+</html>

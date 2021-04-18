@@ -1,0 +1,8 @@
+Contracts
+
+0-Posted
+1-Bid Closed
+2-Approved Transporter
+3-Picked
+4-Dropped
+5-Payed
