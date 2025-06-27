@@ -129,7 +129,7 @@ CREATE TABLE `transporters` (
 --
 
 INSERT INTO `transporters` (`t_id`, `t_name`, `t_password`, `t_email`, `t_contact`, `t_address`, `t_emergency_contact`, `t_aadhar_no`, `t_license_no`, `t_driving_permit`, `t_vehicle_type`, `t_vehicle_no`, `t_max_cargo`, `t_successfull_bids`, `t_contracts_completed`, `t_last_login`, `t_active_contract_id`, `t_contract_active_status`, `t_approved`, `t_balance`) VALUES
-(1, 'Vroomy Patel', '123', 'vroomy@movers.com', 9408251428, '12-ny street', 9408251428, 6549873215, '36A587AD', 'National', 'TATA XXXL', '12sad1', 1500, 1, 1, '2021-03-07 10:41:25', 1, 0, 1, 2700);
+(1, 'Vandan Transporter', '123', 'vandan@movers.com', 9408251428, '12-ny street', 9408251428, 6549873215, '36A587AD', 'National', 'TATA XXXL', '12sad1', 1500, 1, 1, '2021-03-07 10:41:25', 1, 0, 1, 2700);
 
 -- --------------------------------------------------------
 
